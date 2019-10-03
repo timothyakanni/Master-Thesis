@@ -929,10 +929,11 @@ PRROC_obj$auc
 
 # ================ 7. Stacking method of Ensemble learning ==========
 
+# Just using this part for testing!!!
+
 # ---- 7a. with all the features in the data
 # base leaners are: gbm, bagging, SVM, and RF. I have gbm, bagging and SVM models
 # already, just remain only RF model that I need to build
-
 
 trctrl <- trainControl(method = "repeatedcv", number = 10, repeats = 3)
 model_rf_all <- train(factor(class) ~., data = trainset, method="rf",
